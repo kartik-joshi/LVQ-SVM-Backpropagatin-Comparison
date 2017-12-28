@@ -11,48 +11,50 @@ SVM is implemented using SciKit Learn library. Where fit method is called on tra
 
 Backpropagation algorithm implemented. To get accuracy we have to use n_epoch = 30 for each run. Here in 30 runs we got more than 90% accuracy. Time taken in computation is 8.38 sec.
 
-![SVM Run](Images/Backprop_Result.jpg)
+<img src="https://github.com/kartik-joshi/LVQ-SVM-Backpropagatin-Comparison/blob/master/Images/Backprop_Result.jpg" width="500">
+
 
 ## LVQ Run :
 
  LVQ algorithm implemented. To get accuracy we have to use n_epoch = 20 for each run. Here in 20 runs we got almost 90% accuracy. Total time taken for this is 6.34 sec.
- 
- ![SVM Run](Images/LVQ_Result.jpg)
+
+<img src="https://github.com/kartik-joshi/LVQ-SVM-Backpropagatin-Comparison/blob/master/Images/LVQ_Result.jpg" width="500">
  
  ## SVM Run :
  SVM algorithm implemented. To get accuracy we have to use n_epoch = 20(No of iteration) for each run. Here in 30 runs of algorithm we got around 95% accuracy all the time. Total time = 1.039 sec
- 
- ![SVM Run](Images/SVM_Result.jpg)
+
+<img src="https://github.com/kartik-joshi/LVQ-SVM-Backpropagatin-Comparison/blob/master/Images/SVM_Result.jpg" width="500">
 
 ## T test report:
 
 **Result Table :**
-|                     | Backpropagation        | SVM           | LVQ  |
-| -------------- | ------------------------- |:-------------:| -----:|
-|Mean Accuracy  | 93.4620     |  94.8974 | 90.3385 |
-|Standard Deviation   | 0.4659   | 0.6943      |   1.3962 |
-|Variation          | 0.2170  | 0.4820 |   1.9493 |
 
- ![T function](Images/t%20functionjpg)
+|Value |Backpropagation |SVM |LVQ  |
+| ---|---|---|---|
+|Mean Accuracy| 93.4620 |94.8974|90.3385|
+|Standard Deviation|0.4659| 0.6943|1.3962|
+|Variation |0.2170|0.4820|1.9493|
+
+ <img src="https://github.com/kartik-joshi/LVQ-SVM-Backpropagatin-Comparison/blob/master/Images/t%20function.jpg" width="300">
 
 In this T test value of a = 0.05. This means that five times out of a hundred there would be a statistically significant difference between the means (Accuracy) even if there was none (i.e., by "chance"). Here the degrees of freedom (df) for the test is 58 as for each algorithm there are 30 runs.
 
 
 ### 1: Backpropagations and SVM:
 Testing the Hypothesis that performance of backpropagation and SVM is the same or not.
-    1. The hypothesis: H0: Δ = 0 vs. H1: Δ ≠ 0, where Δ = μSVM - μBackpropogation
+    1. The hypothesis: H0: Δ = 0 vs. H1: Δ ≠ 0, where Δ = μSVM - μBackpropogation
     2. The rejection region: Reject H0: Δ = 0, if t is not between ± t0.95(58) = 1.701
     3. here t = 9.40 Not in range of ± t0.95(58) = 1.701. So H0 Rejected there is accuracy improvement in Implementation of Backpropagation compare to SVM
     
 ### 2: Backpropagations and LVQ:
 Testing the Hypothesis that performance of backpropagation and LVQ is the same or not.
-    1. The hypothesis: H0: Δ = 0 vs. H1: Δ ≠ 0, where Δ = μBackpropogation - μLVQ
+    1. The hypothesis: H0: Δ = 0 vs. H1: Δ ≠ 0, where Δ = μBackpropogation - μLVQ
     2. The rejection region: Reject H0: Δ = 0, if t is not between ± t0.95(58) = 1.701
     3. here t = 11.62 Not in range of ± t0.95(58) = 1.701. So H0 Rejected there is accuracy improvement in Implementation of Backpropagation compare to LVQ
     
 ### 3: SVM and LVQ:
 Testing the Hypothesis that performance of SVM and LVQ is the same or not.
-    1.Thehypothesis: H0:Δ=0vs.H1:Δ≠0,whereΔ=μSVM–μLVQ
+    1.Thehypothesis: H0:Δ=0vs.H1:Δ≠0,whereΔ=μSVM–μLVQ
     2. The rejection region: Reject H0: Δ = 0, if t is not between ± t0.95(58) = 1.701
     3. here t =16.01 Not in range of ± t0.95(58) = 1.701. So H0 Rejected there is accuracy improvement in Implementation of Backpropogation compare to SVM
     
